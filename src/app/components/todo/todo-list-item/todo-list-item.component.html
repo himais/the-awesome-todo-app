@@ -3,16 +3,13 @@
 </div>
 <div class="timeline-content task" [ngClass]="{'disabled': isCompleted()}">
   <div class="columns is-mobile">
-    <div class="column is-10">
+    <div class="column is-9">
       <div class="task-info">
         <todo-form [content]="content"></todo-form>
       </div>
     </div>
-    <div class="column is-2">
-      <div class="task-action" [ngClass]="{'-show-button': showActionButton }">
-        <a *ngIf="!content.status.completed" (click)="deleteTask(content.id)">
-          <span class="icon has-text-primary"> <i class="fas fa-times"></i></span></a>
-      </div>
+    <div class="column is-3">
+      <todo-action class="task-action" [ngClass]="{'-show-button': showActionButton }" [content]="content"></todo-action>
     </div>
   </div>
 </div>

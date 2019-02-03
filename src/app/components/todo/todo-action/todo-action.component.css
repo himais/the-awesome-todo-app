@@ -1,0 +1,18 @@
+@import "../../../styles/colors.css";
+
+.dropdown-menu {
+  min-width: 5rem;
+}
+
+.dropdown .button{
+  border-radius: 50%;
+}
+
+.button:focus{
+  border-color: #fff;
+}
+
+.dropdown-item{
+  text-align: right;
+  padding-right: 1rem;
+}
