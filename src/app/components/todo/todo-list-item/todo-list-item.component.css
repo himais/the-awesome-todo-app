@@ -8,7 +8,6 @@
 .task-action {
   opacity: 0;
   display: flex;
-  padding-top: 7px;
   justify-content: flex-end;
   align-content: baseline;
 }
