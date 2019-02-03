@@ -1,0 +1,50 @@
+@import "../../../styles/colors.css";
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--grey-lighter);
+  border-left: solid 0.3rem var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.task-action {
+  display: none;
+  opacity: 0.5;
+}
+
+.-show-button {
+  display: block;
+  opacity: 1;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-info > .task-text {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.disabled {
+  background: var(--grey-lightest);
+  border-color: var(--grey-lighter);
+}
+
+.disabled p,
+.disabled i {
+  color: var(--grey-lighter);
+}
+
+.disabled .task-info:hover {
+  color: var(--grey-lighter);
+}
+
+.disabled .task-info > .task-text {
+  text-decoration: line-through;
+  color: var(--grey-lighter);
+}

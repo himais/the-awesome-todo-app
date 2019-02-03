@@ -1,0 +1,19 @@
+@import "app/styles/colors.css";
+@import "app/styles/fonts.css";
+
+html,
+body {
+  font-family: var(--body-font);
+}
+
+.title {
+  font-family: var(--title-font);
+}
+
+.box {
+  border-radius: 1px !important;
+}
+
+.full-input {
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+
+:root {
+  --title-font: "Major Mono Display", monospace;
+  --body-font: "Roboto Mono", monospace !important;
+}
