@@ -1,0 +1,9 @@
+@import "../../../styles/colors.css";
+
+.icon {
+  color: var(--grey-lighter);
+}
+
+.completed {
+  color: var(--primary);
+}

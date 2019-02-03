@@ -1,0 +1,19 @@
+<form [formGroup]="todoForm" (ngSubmit)="submitForm()">
+  <div class="field has-addons">
+    <div class="control full-input">
+      <input
+        class="input is-large"
+        type="text"
+        name="todo"
+        placeholder="type a task"
+        aria-label="type a task"
+        aria-describedby="todo"
+        formControlName="todo"
+        required
+      />
+    </div>
+    <div class="control">
+      <input type="submit" class="button is-primary is-large" value="add" />
+    </div>
+  </div>
+</form>

@@ -1,4 +1,5 @@
 :root {
+  --grey-dark: hsl(0, 0%, 29%);
   --grey: hsl(0, 0%, 48%);
   --grey-light: hsl(0, 0%, 71%);
   --grey-lighter: hsl(0, 0%, 86%);

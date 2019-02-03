@@ -4,10 +4,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { TodoComponent } from "./components/todo/todo.component";
+import { NewTodoFormComponent } from "./components/todo/new-todo-form/new-todo-form.component";
 import { TodoFormComponent } from "./components/todo/todo-form/todo-form.component";
-import { EditFormComponent } from "./components/todo/edit-form/edit-form.component";
 import { TodoListComponent } from "./components/todo/todo-list/todo-list.component";
 import { TodoListItemComponent } from "./components/todo/todo-list-item/todo-list-item.component";
+import { TodoIconComponent } from "./components/todo/todo-icon/todo-icon.component";
 
 import { TodoService } from "./services/todo/todo.service";
 
@@ -19,10 +20,11 @@ import { TodoModel } from "./models/todo/todo.model";
   declarations: [
     AppComponent,
     TodoComponent,
-    TodoFormComponent,
+    NewTodoFormComponent,
     TodoListComponent,
-    EditFormComponent,
-    TodoListItemComponent
+    TodoFormComponent,
+    TodoListItemComponent,
+    TodoIconComponent
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [TodoService],

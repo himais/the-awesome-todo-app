@@ -8,7 +8,7 @@ export class TodoService {
   private todoList: TodoModel[] = [];
 
   //TODO: REMOVE THIS
-  private setTemporaryData() {
+  public setTemporaryData() {
     this.addTask("task 1");
     this.addTask("task 2");
     this.addTask("task 3");
@@ -20,12 +20,14 @@ export class TodoService {
 
   public addTask(value: any) {
     this.todoList.push(new TodoModel(value));
-    console.log(this.todoList);
   }
 
   public editTask(id: number, value: string) {
     const index = this.findIndex(id);
-    this.todoList[index].description = value;
+    const currentValue = this.todoList[index].description;
+    if(currentValue !== value){
+      this.todoList[index].description = value;
+    }
   }
 
   public deleteTask(id: any) {

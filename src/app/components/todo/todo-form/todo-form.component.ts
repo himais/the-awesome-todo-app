@@ -1,29 +1,40 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { FormGroup, FormControl } from "@angular/forms";
+
 import { TodoService } from "../../../services/todo/todo.service";
-// import { TaskStatus } from "../../../helpers/task-status/task-status.helper";
+import { TodoModel } from "../../../models/todo/todo.model";
 
 @Component({
   selector: "todo-form",
-  templateUrl: "./todo-form.component.html"
+  templateUrl: "./todo-form.component.html",
+  styleUrls: ["./todo-form.component.css"]
 })
-export class TodoFormComponent implements OnInit {
+export class TodoFormComponent implements OnInit{
   private todoForm: FormGroup;
+  @Input() content: TodoModel;
+
   constructor(private todo: TodoService) {}
 
-  ngOnInit() {
+  ngOnInit() {    
+    this.setupForm();
+    this.listenToForm();      
+  }
+
+  protected setupForm() {
     this.todoForm = new FormGroup({
-      todo: new FormControl()
+      task: new FormControl()
     });
   }
 
-  submitForm() {
-    if (this.todoForm.valid) {
-      this.todo.addTask(this.todoForm.value.todo);
-    }
-
-    this.todoForm.reset();
+  protected isCompleted(){
+    return this.content.status.completed;
   }
 
-  resetForm() {}
+  protected saveChanges() {
+    this.todo.editTask(this.content.id, this.todoForm.get('task').value);
+  }
+
+  protected listenToForm(){
+    this.todoForm.get('task').valueChanges.subscribe(this.saveChanges.bind(this));
+  }
 }

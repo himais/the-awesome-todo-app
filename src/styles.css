@@ -2,8 +2,11 @@
 @import "app/styles/fonts.css";
 
 html,
-body {
-  font-family: var(--body-font);
+body,
+input,
+p,
+i {
+  font-family: var(--title-font);
 }
 
 .title {
