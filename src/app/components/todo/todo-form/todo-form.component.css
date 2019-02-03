@@ -1,0 +1,25 @@
+@import "../../../styles/colors.css";
+
+:host{
+  display: block;
+  width: 100%;
+}
+
+.input{
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: var(--grey-dark);
+}
+
+.disabled{
+  text-decoration: line-through;
+  color: var(--grey-lighter);
+}

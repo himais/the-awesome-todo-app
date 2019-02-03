@@ -1,0 +1,28 @@
+@import "../../../styles/colors.css";
+
+.task{
+  display: block;
+  width: 100%;
+}
+
+.task-action {
+  opacity: 0;
+  display: flex;
+  padding-top: 7px;
+  justify-content: flex-end;
+  align-content: baseline;
+}
+
+.task-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.-show-button {
+  opacity: 1;
+}
+
+.timeline-content{
+  padding: 0 !important;
+}

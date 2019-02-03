@@ -1,30 +1,18 @@
-<div>
-
+<div class="timeline-marker is-icon">
+  <todo-icon [content]="content"></todo-icon>
+</div>
+<div class="timeline-content task" [ngClass]="{'disabled': isCompleted()}">
+  <div class="columns is-mobile">
+    <div class="column is-10">
+      <div class="task-info">
+        <todo-form [content]="content"></todo-form>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div class="task-action" [ngClass]="{'-show-button': showActionButton }">
+        <a *ngIf="!content.status.completed" (click)="deleteTask(content.id)">
+          <span class="icon has-text-primary"> <i class="fas fa-times"></i></span></a>
+      </div>
+    </div>
   </div>
-<!-- <div class="task-info">
-  <a (click)="toggleTask(todo.id)">
-    <i
-      class="far"
-      [ngClass]="{'fa-check-square': todo.status.completed, 'fa-square has-text-dark': !todo.status.completed}"
-    ></i>
-  </a>
-  <edit-form
-    *ngIf="edit && !todo.status.completed"
-    [data]="todo"
-    (taskChanged)="editChangedHandler($event)"
-  ></edit-form>
-  <p
-    *ngIf="!edit"
-    class="task-text has-text-left"
-    (click)="editTask(todo.id, todo.status.completed)"
-  >
-    {{todo.description}}
-  </p>
-</div> -->
-<!--
-  <div class="task-action" [ngClass]="{'-show-button': showActionButton }">
-    <a *ngIf="!todo.status.completed" (click)="deleteTask(todo.id)">
-      <span class="icon has-text-primary"> <i class="fas fa-trash"></i></span
-    ></a>
-  </div>
--->
+</div>

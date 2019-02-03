@@ -1,3 +1,7 @@
-<div class="box list-item is-shadowless" *ngFor="let todo of todoList">
-  <todo-list-item [content]="todo"></todo-list-item>
+<div class="timeline">
+  <div class="box is-shadowless" *ngFor="let todo of todoList">
+    <div class="timeline-item">
+      <todo-list-item [content]="todo" class="list-item"></todo-list-item>
+    </div>
+  </div>
 </div>
