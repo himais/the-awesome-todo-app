@@ -1,0 +1,13 @@
+.task-progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+progress::-webkit-progress-value {
+    background: var(--secondary-gradient);
+}
+
+progress::-webkit-progress-bar {
+    background: var(--grey-lighter);
+}

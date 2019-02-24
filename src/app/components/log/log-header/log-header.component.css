@@ -1,5 +1,18 @@
 .hero-body{
-    background: var(--primary-gradient);
+    border-bottom: solid 1px var(--grey-lighter);
+}
+
+.hero-body h1{
+    color: var(--pink);
+    padding-left: 1.2rem;
+}
+
+.hero-body p{
+    color: var(--pink-light);
+}
+
+.date-info{
+    display: flex;
 }
 
 .button{

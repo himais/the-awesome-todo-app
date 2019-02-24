@@ -25,6 +25,7 @@ import { UserProfileComponent } from './components/sidebar/items/user-profile/us
 import { NoteDropdownComponent } from './components/sidebar/items/note-dropdown/note-dropdown.component';
 import { NoteMenuComponent } from './components/sidebar/items/note-menu/note-menu.component';
 import { LogHeaderComponent } from './components/log/log-header/log-header.component';
+import { LogProgressComponent } from './components/log/log-progress/log-progress.component';
 
 // import { TaskStatus } from "./helpers/task-status/task-status.model";
 
@@ -48,6 +49,7 @@ import { LogHeaderComponent } from './components/log/log-header/log-header.compo
     NoteDropdownComponent,
     NoteMenuComponent,
     LogHeaderComponent,
+    LogProgressComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [

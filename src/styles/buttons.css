@@ -9,3 +9,8 @@
   background: var(--pink) !important;
   color: var(--white) !important;
 }
+
+.icon-button{
+  cursor: pointer;
+  color: var(--grey-light);
+}

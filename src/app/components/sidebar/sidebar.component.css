@@ -14,5 +14,5 @@
 }
 
 .sidebar .side-content{
-    border-right: solid 1px var(--neutral-gradient);
+    border-right: solid 1px var(--grey-lighter);
 }

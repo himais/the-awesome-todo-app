@@ -1,13 +1,22 @@
 <div class="hero-body">
-  <div class="container">
-    <h2 class="has-text-white">
-      Log diário
-    </h2>
-    <p class="is-size-6 has-text-white"> {{today | date:'fullDate'}} </p>
+  <div class="columns is-desktop is-vcentered">
+    <div class="column is-9">
+      <h1>
+        Log diário
+      </h1>
+      <div class="date-info">
+        <i class='uil uil-angle-left icon-button'></i>
+        <p class="is-size-6"> {{today | date:'fullDate'}} </p>
+        <i class='uil uil-angle-right icon-button'></i>
+      </div>
+    </div>
+    <div class="column is-3">
+      <log-progress></log-progress>
+    </div>
   </div>
 </div>
 
-<a class="button is-danger is-rounded has-text-white">
+<a class="button is-danger is-rounded">
   <i class='uil uil-plus'></i>
   <span class="button-text">add task</span>
 </a>
