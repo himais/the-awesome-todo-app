@@ -15,6 +15,15 @@ import { TodoActionComponent } from "./components/todo/todo-action/todo-action.c
 import { TodoService } from "./services/todo/todo.service";
 
 import { TodoModel } from "./models/todo/todo.model";
+import { LogComponent } from './components/log/log/log.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { UserBarComponent } from './components/sidebar/user-bar/user-bar.component';
+import { NoteBarComponent } from './components/sidebar/note-bar/note-bar.component';
+import { SideLogoComponent } from './components/sidebar/items/side-logo/side-logo.component';
+import { IconMenuComponent } from './components/sidebar/items/icon-menu/icon-menu.component';
+import { UserProfileComponent } from './components/sidebar/items/user-profile/user-profile.component';
+import { NoteDropdownComponent } from './components/sidebar/items/note-dropdown/note-dropdown.component';
+import { NoteMenuComponent } from './components/sidebar/items/note-menu/note-menu.component';
 
 // import { TaskStatus } from "./helpers/task-status/task-status.model";
 
@@ -28,6 +37,15 @@ import { TodoModel } from "./models/todo/todo.model";
     TodoListItemComponent,
     TodoIconComponent,
     TodoActionComponent,
+    LogComponent,
+    SidebarComponent,
+    UserBarComponent,
+    NoteBarComponent,
+    SideLogoComponent,
+    IconMenuComponent,
+    UserProfileComponent,
+    NoteDropdownComponent,
+    NoteMenuComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [TodoService],

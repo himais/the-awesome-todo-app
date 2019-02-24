@@ -1,0 +1,18 @@
+:root {
+  --grey-dark: hsl(0, 0%, 29%);
+  --grey: hsl(0, 0%, 48%);
+  --grey-light: hsl(0, 0%, 71%);
+  --grey-lighter: #fdfbfb;
+
+  --primary: hsl(171, 100%, 41%);
+
+  --pink: rgb(226, 106, 106);
+  --pink-light: rgb(224, 130, 131);
+  --pink-lighter: rgb(241, 169, 160);
+
+  --white: white;
+
+  --primary-gradient:   linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); /* 165 Morning Salad */
+  --secondary-gradient: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); /* 048 Strong Bliss */
+  --neutral-gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); /* 018 Cloudy Knoxville */
+}
