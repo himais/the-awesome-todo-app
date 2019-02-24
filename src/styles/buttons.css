@@ -1,0 +1,11 @@
+.button.is-danger{
+  font-size: 0.95rem;
+  background: var(--secondary-gradient) !important;
+  border: none;
+  color: var(--white);
+}
+
+.button.is-danger:hover{
+  background: var(--pink) !important;
+  color: var(--white) !important;
+}

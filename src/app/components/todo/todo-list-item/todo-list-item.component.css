@@ -2,20 +2,18 @@
 
 .task{
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .task-action {
   opacity: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-content: baseline;
 }
 
 .task-info {
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: left;
 }
 
 .-show-button {

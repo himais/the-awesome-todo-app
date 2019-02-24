@@ -4,12 +4,8 @@
   min-width: 5rem;
 }
 
-.dropdown .button{
-  border-radius: 50%;
-}
-
-.button:focus{
-  border-color: #fff;
+.dropdown{
+  border: none;
 }
 
 .dropdown-item{

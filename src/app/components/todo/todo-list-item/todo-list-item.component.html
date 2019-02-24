@@ -1,15 +1,13 @@
 <div class="timeline-marker is-icon">
   <todo-icon [content]="content"></todo-icon>
 </div>
-<div class="timeline-content task" [ngClass]="{'disabled': isCompleted()}">
+<div class="timeline-content task">
   <div class="columns is-mobile">
-    <div class="column is-9">
+    <div class="column">
       <div class="task-info">
         <todo-form [content]="content"></todo-form>
+        <todo-action class="task-action" [ngClass]="{'-show-button': showActionButton }" [content]="content"></todo-action>
       </div>
-    </div>
-    <div class="column is-3">
-      <todo-action class="task-action" [ngClass]="{'-show-button': showActionButton }" [content]="content"></todo-action>
     </div>
   </div>
 </div>

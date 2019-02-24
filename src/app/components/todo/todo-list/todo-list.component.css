@@ -1,20 +1,7 @@
 @import "../../../../styles/colors.css";
 
-.box{
-  padding: 0;
-  margin: 0;
-  border: solid 1px var(--grey-lighter);
-  border-top: 0;
-}
-
-.box:first-child{
-  border-top: solid 1px var(--grey-lighter);
-}
-
-.list-item{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.timeline{
+  margin-left: 1.7rem;
 }
 
 .timeline-item{
@@ -22,6 +9,11 @@
   margin-left: 20px;
   padding-bottom: 4px;
   padding-top: 4px;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
 }
 
 todo-list-item{

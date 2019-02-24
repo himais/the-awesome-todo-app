@@ -24,6 +24,7 @@ import { IconMenuComponent } from './components/sidebar/items/icon-menu/icon-men
 import { UserProfileComponent } from './components/sidebar/items/user-profile/user-profile.component';
 import { NoteDropdownComponent } from './components/sidebar/items/note-dropdown/note-dropdown.component';
 import { NoteMenuComponent } from './components/sidebar/items/note-menu/note-menu.component';
+import { LogHeaderComponent } from './components/log/log-header/log-header.component';
 
 // import { TaskStatus } from "./helpers/task-status/task-status.model";
 
@@ -46,9 +47,12 @@ import { NoteMenuComponent } from './components/sidebar/items/note-menu/note-men
     UserProfileComponent,
     NoteDropdownComponent,
     NoteMenuComponent,
+    LogHeaderComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
-  providers: [TodoService],
+  providers: [
+    TodoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
