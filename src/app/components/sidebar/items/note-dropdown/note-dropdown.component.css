@@ -1,0 +1,22 @@
+.dropdown.is-fullwidth {
+    display: flex;
+ }
+
+.dropdown.is-fullwidth * {
+    width: 100%;
+}
+
+.dropdown *,
+button:hover,
+button:active,
+button:focus
+{
+    border: none;
+    background: transparent;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.dropdown span{
+    color: var(--pink);
+}

@@ -1,0 +1,18 @@
+.sidebar{
+    width: 22vw;
+    height: 100vh;
+}
+
+.sidebar .columns{
+    margin: 0;
+    height: 100%;
+}
+
+.sidebar .icon-side{
+    background-image: var(--primary-gradient);
+    padding: 0;
+}
+
+.sidebar .side-content{
+    border-right: solid 1px var(--neutral-gradient);
+}

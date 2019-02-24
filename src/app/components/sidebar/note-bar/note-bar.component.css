@@ -1,0 +1,13 @@
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.button{
+    font-size: 0.95rem;
+    background: var(--secondary-gradient);
+    border: none;
+    color: var(--white);
+}

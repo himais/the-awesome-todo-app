@@ -1,22 +1,2 @@
-@import "app/styles/colors.css";
-@import "app/styles/fonts.css";
-
-html,
-body,
-input,
-p,
-i {
-  font-family: var(--title-font);
-}
-
-.title {
-  font-family: var(--title-font);
-}
-
-.box {
-  border-radius: 1px !important;
-}
-
-.full-input {
-  width: 100%;
-}
+@import "styles/colors.css";
+@import "styles/fonts.css";

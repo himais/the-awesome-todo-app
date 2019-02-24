@@ -1,0 +1,16 @@
+.profile{    
+    padding: 1rem 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logout{
+    display: block;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.icon-menu-item{
+    width: auto;
+    height: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-menu-item:hover{
+    background-color: var(--white);
+    color: var(--pink-light);
+    border-left: solid 2px var(--pink-light);
+}

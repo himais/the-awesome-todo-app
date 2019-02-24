@@ -1,0 +1,9 @@
+.logo{    
+    padding: 1rem 0 2rem;
+}
+
+.logo .media{
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+}
